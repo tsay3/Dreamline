@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.projectdreamline.FlightInfoController"
+           stylesheets="@styles.css"
+           alignment="TOP_LEFT">
+
+<GridPane         vgap="10" hgap="10"
+          stylesheets="@styles.css"
+          alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <Label text="Airline" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="airline-label"/>
+    <Label text="Flight number" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="airline-label"/>
+    <Label text="Departure date" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="airline-label"/>
+
+    <TextField fx:id="airlineField" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="airline-text-field"/>
+    <TextField fx:id="flightNumberField" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="airline-text-field"/>
+    <DatePicker fx:id="departureDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="airline-text-field"/>
+
+    <ListView fx:id="suggestionsListView" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="suggestions-list-view" visible="false"/>
+
+    <Pane fx:id="contentPane" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+
+    <!-- Find flight button -->
+    <Button text="Find flight" onAction="#handleSubmitButtonAction" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" styleClass="find-flight-button"/>
+</GridPane>
+    <!-- Back Button -->
+    <Button fx:id="backButton" text="Back" onAction="#backButtonAction" styleClass="back-button" />
+    <StackPane.margin>
+        <Insets top="10" left="10" />
+    </StackPane.margin>
+
+
+</StackPane>
+

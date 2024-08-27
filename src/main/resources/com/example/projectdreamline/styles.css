@@ -1,0 +1,75 @@
+
+/* styles.css */
+
+.cta-Label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-alignment: center;
+
+}
+
+.airline-label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 1, 2, 0, 0);
+
+
+}
+
+.airline-text-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.suggestions-list-view {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-width: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px; /* Round the background edges */
+    -fx-padding: 5px;
+    -fx-max-height: 90px; /* Set maximum height for the suggestions list view */
+
+}
+.suggestions-list-view .list-cell {
+    -fx-text-fill: black; /* Set text color to black */
+    -fx-font-size: 12px; /* Set font size to 14px */
+}
+
+
+.find-flight-button {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #007bff;
+    -fx-padding: 10px 145px;
+    -fx-border-radius: 25px;
+    -fx-transition: background-color 0.2s;
+
+}
+
+.find-flight-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.back-button {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-background-color: #007bff;
+    -fx-transition: background-color 0.2s;
+
+}
+
+.back-button:hover {
+    -fx-background-color: #0056b3;
+}

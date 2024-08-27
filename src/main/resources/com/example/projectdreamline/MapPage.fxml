@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.web.WebView?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.projectdreamline.MapPageController"
+            prefHeight="600.0" prefWidth="800.0">
+
+<WebView fx:id="webView"  AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+
+    <VBox prefWidth="700" prefHeight="100" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: lightgray; -fx-padding: 0px 0px 0px 0px;" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="30" AnchorPane.bottomAnchor="0">
+        <!-- Add your input fields or other nodes here -->
+       <HBox>
+           <ImageView>
+               <Image url="@plane.png" />
+               <fitHeight>22</fitHeight>
+               <fitWidth>22</fitWidth>
+               <HBox.margin>
+                   <Insets top="5" left="10"/>
+               </HBox.margin>
+           </ImageView>
+
+           <Label fx:id="sourceLabel" style="-fx-font-size: 16pt; -fx-font-weight: bold;">
+           <HBox.margin>
+               <Insets left="10"/>
+           </HBox.margin>
+           </Label>
+
+           <Label text=" - " style="-fx-font-size: 16pt; -fx-font-weight: bold; " />
+           <Label fx:id="destinationLabel" style="-fx-font-size: 16pt; -fx-font-weight: bold;" />
+           <HBox.margin>
+               <Insets left="30" right="30"/>
+           </HBox.margin>
+       </HBox>
+        <HBox fx:id="airlineFlightNumBox">
+            <Label fx:id="airlineLabel" style="-fx-font-size: 16pt; -fx-font-weight: bold; -fx-padding: 0px 0px 0px 10px;"  />
+            <Label text=" - " style="-fx-font-size: 16pt; -fx-font-weight: bold; " />
+            <Label fx:id="flightNumberLabel" style="-fx-font-size: 16pt; -fx-font-weight: bold;" />
+            <HBox.margin>
+                <Insets left="30" right="30"/>
+            </HBox.margin>
+        </HBox>
+        <HBox fx:id="departureTimeBox">
+            <Label fx:id="departureTimeLabel" style="-fx-font-size: 15pt; -fx-text-fill: #565656; -fx-padding: 0px 0px 0px 10px;"  />
+        </HBox>
+
+        <HBox spacing="10" style="-fx-padding: 20px 0px 0px 0px;">
+            <Label fx:id="departingTimeLabel" style="-fx-font-size: 16pt; -fx-padding: 0px 0px 0px 10px;"  />
+            <Label fx:id="departingAirportLabel" style="-fx-font-size: 16pt;"  />
+        </HBox>
+
+        <HBox spacing="10" style="-fx-padding: 0px 0px 0px 0px;">
+            <Label fx:id="arrivalTimeLabel" style="-fx-font-size: 16pt; -fx-padding: 0px 0px 0px 10px;"  />
+            <Label fx:id="arrivalAirportLabel" style="-fx-font-size: 16pt;"  />
+        </HBox>
+
+
+    </VBox>
+
+</AnchorPane>
