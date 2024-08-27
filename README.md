@@ -9,7 +9,7 @@ Implementation by Shreya Boyapati, Thomas Say, Ayesha Quadri Syeda, and Danyal W
 
 This program was designed to be executed from inside IntelliJ. The source code is provided purely for educational purposes only.
 
-This program also makes use of an API client ID and secret key from Amadeus, as well as a Google Maps API key, which is not included in this repository. A working Amadeus ID and secret must be added to "api_keys.xml" within the resources folder with the XML tags `client_id' and `client_secret' for flight lookup functionality, and a Google Maps API key must be added under the tag `google_key' for the flight tracking functionality.
+This program also makes use of an API client ID and secret key from Amadeus, as well as a Google Maps API key, which is not included in this repository. A working Amadeus ID and secret must be added to "api_keys.xml" within the resources folder with the XML tags `client_id` and `client_secret` for flight lookup functionality, and a Google Maps API key must be added under the tag `google_key` for the flight tracking functionality.
 
 # Thomas Say's Contributions
 
